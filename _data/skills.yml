@@ -1,33 +1,25 @@
 languages:
-  - item: JavaScript (ES6)
-  - item: TypeScript
-  - item: HTML
-  - item: CSS/Sass
   - item: Python
   - item: SQL
-  - item: R
+  - item: LookML
+  - item: HTML/CSS/JavaScript
+  - item: Swift
 
-frameworks:
-  - item: Ember & Glimmer
-  - item: React
-  - item: Jekyll
-  - item: Node
-  - item: D3
-  - item: Wordpress
-  - item: Timber
-
-tools:
-  - item: Bash
-  - item: Git & Github
-  - item: Gulp & Grunt
-  - item: Chrome DevTools
-  - item: Postman
+data science:
+  - item: pandas
+  - item: NumPy
+  - item: PyTorch
+  - item: GeoPandas
+  - item: dbt
   - item: MongoDB
 
-design:
-  - item: Sketch
-  - item: InDesign
-  - item: InVision
-  - item: Prototyping
-  - item: Wireframing
-  - item: User Testing
+front-end:
+  - item: D3
+  - item: L<sup>A</sup>T<sub>E</sub>X
+  - item: Streamlit
+  - item: Plotly & dash  
+
+dev tools:
+  - item: Bash
+  - item: Git & Github
+  - item: Looker & LookML
