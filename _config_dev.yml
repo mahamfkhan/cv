@@ -1,30 +1,23 @@
 # Site settings
-name: Brittany Chiang
-title: Brittany Chiang | Front End Software Engineer
-description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://bchiang7.github.io/
-baseurl: ''
-email: brittany.chiang@gmail.com
-cover: https://bchiang7.github.io/img/og.png
-logo: https://bchiang7.github.io/img/emojis/technologist.png
-resume: https://bchiang7.github.io/resume.pdf
+name: Your Name
+title: Your Name | Your Title
+description: Your personal description
+url: https://mahamfkhan.github.io/cv/
+baseurl: '/cv'
+email: your.email@example.com
+cover: https://mahamfkhan.github.io/cv/img/your-cover-image.png
+logo: https://mahamfkhan.github.io/cv/img/your-logo.png
+resume: https://mahamfkhan.github.io/cv/your-resume.pdf
 social:
   - title: email
-    url: mailto:brittany.chiang@gmail.com
-  - title: twitter
-    url: https://twitter.com/bchiang7
-  - title: instagram
-    url: https://instagram.com/bchiang7
-  - title: codepen
-    url: http://codepen.io/bchiang7
+    url: mailto:your.email@example.com
   - title: github
-    url: https://github.com/bchiang7
+    url: https://github.com/mahamfkhan
   - title: linkedin
-    url: https://www.linkedin.com/in/bchiang7
+    url: https://www.linkedin.com/in/your-linkedin-profile
 
 # Build settings
 markdown: kramdown
-
 exclude:
   - 'Gemfile'
   - 'Gemfile.lock'
@@ -34,12 +27,9 @@ exclude:
   - 'build'
   - 'gulpfile.js'
   - 'package.json'
-
 keep_files:
-  - 'CNAME'
   - '.git'
   - '.gitignore'
-
 plugins_dir:
   - jekyll-minifier
   - jekyll-sitemap
