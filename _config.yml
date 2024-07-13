@@ -9,12 +9,12 @@ cover: https://mahamfkhan.github.io/cv/img/og.png
 logo: https://mahamfkhan.github.io/cv/img/emojis/technologist.png
 resume: https://mahamfkhan.github.io/cv/resume.pdf
 social:
-  - title: email
-    url: mailto:your.email@example.com
+  # - title: email
+  #   url: mailto:your.email@example.com
   - title: github
     url: https://github.com/mahamfkhan
   - title: linkedin
-    url: https://www.linkedin.com/in/your-linkedin-profile
+    url: https://www.linkedin.com/in/mahamfkhan
   # Add or remove other social media as needed
 
 # Build settings
