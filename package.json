@@ -8,6 +8,9 @@
   },
   "homepage": "https://mahamfkhan.github.io/cv",
   "main": "gulpfile.js",
+  "engines": {
+    "node": ">=20.11.1"
+  },
   "scripts": {
     "start": "gulp serve --watch",
     "build": "gulp build"
@@ -16,13 +19,14 @@
   "license": "ISC",
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^7.0.0",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-eslint": "^6.0.0",
-    "gulp-imagemin": "6.0.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "3.0.2"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.64.1"
   }
 }
