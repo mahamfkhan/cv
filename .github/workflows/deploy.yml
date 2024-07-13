@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Set this to your default branch
+      - master  # Changed from 'main' to 'master'
 
 jobs:
   build-and-deploy:
@@ -15,16 +15,18 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7  # Adjust this if needed
+          ruby-version: 2.7.8  # Specify the exact version
+          bundler-version: '2.4.22'  # Specify a compatible Bundler version
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '10.13.0'  # Using the version from your .nvmrc
+          node-version: '18.19.1'  # Updated to a more recent LTS version
 
       - name: Install Ruby dependencies
         run: |
-          gem install jekyll sass bundler jekyll-minifier jekyll-sitemap
+          gem install jekyll sass jekyll-minifier jekyll-sitemap
+          bundle install
 
       - name: Install Node.js dependencies
         run: npm install
