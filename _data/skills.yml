@@ -17,7 +17,7 @@ front-end:
   - item: D3
   - item: L<sup>A</sup>T<sub>E</sub>X
   - item: Streamlit
-  - item: Plotly & dash  
+  - item: Plotly & Dash  
 
 dev-tools:
   - item: Bash
