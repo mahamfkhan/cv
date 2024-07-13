@@ -5,7 +5,7 @@ languages:
   - item: HTML/CSS/JavaScript
   - item: Swift
 
-data science:
+data-science:
   - item: pandas
   - item: NumPy
   - item: PyTorch
@@ -19,7 +19,7 @@ front-end:
   - item: Streamlit
   - item: Plotly & dash  
 
-dev tools:
+dev-tools:
   - item: Bash
   - item: Git & Github
   - item: Looker & LookML
