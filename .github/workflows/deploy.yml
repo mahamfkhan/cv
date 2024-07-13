@@ -10,28 +10,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.8
-          bundler: '2.4.22'
-
-      - name: Update RubyGems and install dependencies
-        run: |
-          gem update --system
-          gem install ffi -v 1.17.0
-          gem install jekyll sass jekyll-minifier jekyll-sitemap
-          bundle install
+          ruby-version: '3.2'  # Latest stable Ruby version as of July 2024
+          bundler-cache: true  # This will install dependencies and cache them
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '18.19.1'
+          node-version: '20'  # Latest LTS version as of July 2024
+          cache: 'npm'
 
-      - name: Install Node.js dependencies
-        run: npm install
+      - name: Install dependencies
+        run: |
+          gem update --system
+          gem install jekyll sass jekyll-minifier jekyll-sitemap
+          npm install
 
       - name: Build site
         run: npm run build
