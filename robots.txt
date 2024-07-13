@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mahamfkhan.github.io/cv/sitemap.xml
