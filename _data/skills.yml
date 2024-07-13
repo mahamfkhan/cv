@@ -15,7 +15,7 @@ data-science:
 
 front-end:
   - item: D3
-  - item: <img src="path_to_latex_logo.png" alt="LaTeX" style="height: 1em; vertical-align: middle;">
+  - item: L<sup>A</sup>T<sub>E</sub>X
   - item: Streamlit
   - item: Plotly & dash  
 
