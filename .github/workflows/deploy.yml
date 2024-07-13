@@ -15,19 +15,19 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'  # Latest stable Ruby version as of July 2024
-          bundler-cache: true  # This will install dependencies and cache them
+          ruby-version: '3.2'
+          bundler-cache: true
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Latest LTS version as of July 2024
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
         run: |
-          gem update --system
-          gem install jekyll sass jekyll-minifier jekyll-sitemap
+          npm install -g gulp-cli
+          bundle install
           npm install
 
       - name: Build site
@@ -37,4 +37,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site  # Adjust this if your build output is in a different directory
+          publish_dir: ./_site
